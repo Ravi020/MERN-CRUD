@@ -4,8 +4,10 @@ import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import Main from './Component.jsx/Main';
 import Rigester from './Component.jsx/Rigester';
+import ShowUser from './Component.jsx/ShowUser';
 function App() {
   return (
     <BrowserRouter>
@@ -13,6 +15,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Main/>}/>
       <Route path='/reg' element={<Rigester/>}/>
+      <Route path='/get' element={<ShowUser/>}/>
 
     </Routes>
     </div>
